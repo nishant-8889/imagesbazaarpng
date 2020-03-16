@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;  
+    
+}
 body
 {
     background-color: black;
@@ -5,9 +9,9 @@ body
 #logo
 {
     
-    max-width: 100%;
+    max-width: 100%
     margin-right: %;
-    
+    height: 100px;
     margin-left: 20%;
 }
 #beforesignin
@@ -18,7 +22,7 @@ body
     top: 25px;
     right: 10px;
     width: 100px;
-    height: 30px;
+    height: 100px;
     margin-left: 90%;
     margin-right: 0%;
     padding: 0px;
@@ -29,15 +33,49 @@ body
 #pricing
 {
     position: fixed;
-    position: absolute;
     top: 25px;
     right: 10px;
     width: 100px;
-    height: 30px;
+    border: 1px black ;
+    height: 100px;
     margin-left: 90%;
-    margin-right: 14%;
+    margin-right: 10%;
     padding: 0px;
     background: none;
     color: white;
     font-size: 21px;
+}
+#sidebar
+{
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    left:-200px;
+    width: 200px;
+    height: 100%;
+    background: white;
+    transition: all 500ms linear;
+}
+#sidebar.active {
+    left: 0px;
+}
+#sidebar ul li
+{
+    color: black;
+    list-style: name;
+    padding: 15px 10px;
+    border-bottom:  1px black;    
+}
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    top: 0%;
+    height: 0px;
+}
+#sidebar .toggle-btn span{
+    display:block;
+    width: 26px;
+    height: 3px;
+    background: white;
+    margin: 5px 0px; 
 }
